@@ -52,9 +52,3 @@ console.log(result);
 // და მეორე პარამეტრად მიიღებს სტრინგს დაამ მასივში.find ით მოვძებნოთ ობიექტის 
 //  name === ფუნქციის მეორე პარამეტრს და დავაბრუნოთ ნაპოვნი ობიექტი
 
-
-let objectArray = [{ name="Giorgi" }, { name="Tamu" }];
-function findName(name) {
-    return objectArray[0].name;
-}
-console.log(findName(objectArray));
