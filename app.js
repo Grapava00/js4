@@ -12,7 +12,6 @@ function isEven(number) {
         return false;
     }
 }
-
 console.log(isEven(getRandomInt(100)));
 
 // 2. დაწერეთ ფუნქცია, getCurrencySymbolFromCode რომელიც პარამეტრად
@@ -32,7 +31,6 @@ function getCurrencySymbolFromCode(currency) {
         return "input correct text";
     }
 }
-
 console.log(getCurrencySymbolFromCode("EUR"));
 
 // დაწერეთ ფუნქცია, რომელიც მიიღებს UpperCase სტრინგს მაგ(MY NAME IS JOHN) 
@@ -41,7 +39,6 @@ console.log(getCurrencySymbolFromCode("EUR"));
 function lowerCase(string) {
     return string.toLowerCase();
 }
-
 console.log(lowerCase("LOREM IPSUM"));
 
 // 4. დაწერეთ ფუნქცია, რომელიც მიიღებს რიცხვების მასივს 
@@ -54,3 +51,10 @@ console.log(result);
 // 5. დაწერეთ ფუნქცია, რომელიც მიიღებს ობიექტების მასივს(ობიექტს უნდა ქონდეს ველი name) 
 // და მეორე პარამეტრად მიიღებს სტრინგს დაამ მასივში.find ით მოვძებნოთ ობიექტის 
 //  name === ფუნქციის მეორე პარამეტრს და დავაბრუნოთ ნაპოვნი ობიექტი
+
+
+let objectArray = [{ name="Giorgi" }, { name="Tamu" }];
+function findName(name) {
+    return objectArray[0].name;
+}
+console.log(findName(objectArray));
