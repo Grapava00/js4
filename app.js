@@ -34,3 +34,12 @@ function getCurrencySymbolFromCode(currency) {
 }
 
 console.log(getCurrencySymbolFromCode("EUR"));
+
+// დაწერეთ ფუნქცია, რომელიც მიიღებს UpperCase სტრინგს მაგ(MY NAME IS JOHN) 
+// და დააბრუნებს LowerCase(my name is john) სტრინგს
+
+function lowerCase(string) {
+    return string.toLowerCase();
+}
+
+console.log(lowerCase("LOREM IPSUM"));
