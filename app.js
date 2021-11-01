@@ -29,8 +29,8 @@ function getCurrencySymbolFromCode(currency) {
     } else if (currency == "GEL") {
         return "ლ";
     } else {
-        return "input correct text"
+        return "input correct text";
     }
 }
 
-console.log(getCurrencySymbolFromCode("EUR"))
+console.log(getCurrencySymbolFromCode("EUR"));
