@@ -4,7 +4,6 @@
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
-console.log(getRandomInt(100));
 
 function isEven(number) {
     if (number % 2 == 0) {
@@ -13,6 +12,7 @@ function isEven(number) {
         return false;
     }
 }
+
 console.log(isEven(getRandomInt(100)));
 
 // 2. დაწერეთ ფუნქცია, getCurrencySymbolFromCode რომელიც პარამეტრად
@@ -20,3 +20,17 @@ console.log(isEven(getRandomInt(100)));
 //  დააბრუნებს ამ კოდის შესაბამის სიმბოლოს ($, €, ლ) 
 // თუ ისეთი კოდს გადავცემ რომლის სიმბოლოც არ მაქვს დააბრუნოს კოდი
 
+function getCurrencySymbolFromCode(currency) {
+    if (currency == "USD") {
+        return "$";
+    }
+    else if (currency == "EUR") {
+        return "€";
+    } else if (currency == "GEL") {
+        return "ლ";
+    } else {
+        return "input correct text"
+    }
+}
+
+console.log(getCurrencySymbolFromCode("EUR"))
